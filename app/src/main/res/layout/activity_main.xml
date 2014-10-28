@@ -1,11 +1,42 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    xmlns:material="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+    tools:context=".MainActivity">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+
+    <net.qiujuer.genius.material.MaterialButton
+        android:id="@+id/feedbackButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Feedback"
+        material:gm_fontFamily="opensans"
+        material:gm_fontWeight="bold"
+        material:gm_isAutoMove="true"
+        material:gm_isMaterial="true"
+        material:gm_textAppearance="light"
+        material:gm_theme="@array/grape" />
+
+    <net.qiujuer.genius.material.MaterialButton
+        android:id="@+id/unreadButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/feedbackButton"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="New Message"
+        material:gm_fontFamily="opensans"
+        material:gm_fontWeight="bold"
+        material:gm_isAutoMove="true"
+        material:gm_isMaterial="true"
+        material:gm_textAppearance="light"
+        material:gm_theme="@array/grass" />
 
 </RelativeLayout>
